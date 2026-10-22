@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Poster Generator — Free Text-to-Poster Maker, No Sign-Up</title>
+  <meta name="description" content="Type an idea and get a ready-to-share AI poster in seconds. Free AI poster generator with automatic typography, 4 poster sizes, PNG download. No account needed." />
+  <link rel="canonical" href="https://YOURDOMAIN.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI Poster Generator — Free Text-to-Poster Maker" />
+  <meta property="og:description" content="Type an idea, get a poster. Free AI poster generator with automatic typography. No sign-up." />
+  <meta property="og:url" content="https://YOURDOMAIN.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Poster Generator",
+    "url": "https://YOURDOMAIN.com/",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Any",
+    "description": "Type an idea and get a ready-to-share AI poster with automatic typography. Free, no sign-up.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this AI poster generator free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. The generator is completely free and does not require an account. Open the page, type your idea, and download your poster." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to generate a poster?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most posters are ready in 5 to 20 seconds. If the AI image service is busy, the generator instantly falls back to a smart gradient background so you always get a result." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the posters I create commercially?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The posters you create are yours to use for social media, events and promotions. If you plan large-scale commercial use, please review the AI-imagery rules that apply in your country or industry." }
+      },
+      {
+        "@type": "Question",
+        "name": "What poster sizes are supported?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Four sizes: Poster 4:5 (1080×1350) for Instagram, Square 1:1 (1080×1080), Story 9:16 (1080×1920) for Reels and TikTok, and Wide 16:9 (1920×1080) for screens and banners." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the AI write the text on my poster?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The AI paints the background artwork. Your title, subtitle and call-to-action are typeset on top automatically, which keeps every word sharp and correctly spelled — a common weakness of pure image generators." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <span class="logo">✦ AI Poster Generator</span>
+    <a class="header-cta" href="#tool">Create a poster</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>AI Poster Generator</h1>
+      <p class="subtitle">
+        Type an idea. Get a ready-to-share poster in seconds —
+        AI-painted artwork, perfectly typeset text, free and no sign-up.
+      </p>
+    </section>
+
+    <section class="tool card" id="tool">
+      <div class="tool-grid">
+        <div class="controls">
+          <label for="prompt">Describe your poster</label>
+          <textarea id="prompt" rows="3" placeholder="e.g. grand opening of a coffee shop, warm and cozy">grand opening of a coffee shop, warm cozy tones</textarea>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="title-input">Title</label>
+              <input id="title-input" type="text" value="GRAND OPENING" maxlength="60" />
+            </div>
+            <div class="field">
+              <label for="subtitle-input">Subtitle <span class="opt">(optional)</span></label>
+              <input id="subtitle-input" type="text" value="Free coffee all weekend" maxlength="80" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cta-input">Call to action <span class="opt">(optional)</span></label>
+            <input id="cta-input" type="text" value="Visit us this Saturday" maxlength="60" />
+          </div>
+
+          <label>Style</label>
+          <div class="chips" id="style-chips">
+            <button class="chip active" data-style="gradient">Gradient</button>
+            <button class="chip" data-style="minimal">Minimal</button>
+            <button class="chip" data-style="neon">Neon</button>
+            <button class="chip" data-style="vintage">Vintage</button>
+            <button class="chip" data-style="bold">Bold Sale</button>
+            <button class="chip" data-style="pastel">Pastel</button>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="size-select">Size</label>
+              <select id="size-select">
+                <option value="poster">Poster 4:5 · 1080×1350</option>
+                <option value="square">Square 1:1 · 1080×1080</option>
+                <option value="story">Story 9:16 · 1080×1920</option>
+                <option value="wide">Wide 16:9 · 1920×1080</option>
+              </select>
+            </div>
+            <div class="field btn-field">
+              <button class="btn" id="generate-btn">Generate poster</button>
+            </div>
+          </div>
+
+          <p class="status" id="status"></p>
+        </div>
+
+        <div class="preview">
+          <canvas id="canvas" width="1080" height="1350"></canvas>
+          <div class="preview-actions" id="preview-actions" hidden>
+            <button class="btn btn-ghost" id="regenerate-btn">↻ Regenerate</button>
+            <button class="btn" id="download-btn">↓ Download PNG</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Try these ideas</h2>
+      <p class="lead">One click fills the form — then hit Generate.</p>
+      <div class="idea-row">
+        <button class="idea" data-prompt="music festival at night, neon lights, energetic crowd" data-style="neon" data-title="SOUND WAVE FEST" data-subtitle="Aug 22 · Riverside Park" data-cta="Get tickets now">🎪 Event poster</button>
+        <button class="idea" data-prompt="big sale background, dynamic diagonal shapes, red and yellow" data-style="bold" data-title="MEGA SALE" data-subtitle="Up to 70% off" data-cta="Shop today only">🛒 Sale poster</button>
+        <button class="idea" data-prompt="serene mountain lake at sunrise, soft mist, calm water" data-style="minimal" data-title="Breathe." data-subtitle="Motivation starts with rest" data-cta="">🧘 Quote poster</button>
+        <button class="idea" data-prompt="birthday party with balloons and confetti, joyful pastel colors" data-style="pastel" data-title="HAPPY BIRTHDAY" data-subtitle="Join the party · 6 PM" data-cta="You're invited!">🎂 Birthday poster</button>
+      </div>
+
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><h3>Describe</h3><p>Type what your poster is about — an event, a sale, a mood. Pick a style and size.</p></div>
+        <div class="step"><span class="step-num">2</span><h3>Generate</h3><p>AI paints a unique background for your idea while our typography engine lays out your text.</p></div>
+        <div class="step"><span class="step-num">3</span><h3>Download</h3><p>Get a crisp PNG in the exact size for Instagram, Stories, or screens. One click.</p></div>
+      </div>
+
+      <h2>What can you create?</h2>
+      <p>
+        The generator works for any occasion: <strong>event posters</strong> and gig flyers,
+        <strong>sale posters</strong> with punchy promo energy, <strong>quote posters</strong> with calm
+        scenery, <strong>birthday and party invitations</strong>, grand openings, workshops, church
+        gatherings, sports matches and more. Each generation is unique — regenerate until it feels right,
+        then download.
+      </p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq">
+        <h3>Is this AI poster generator free?</h3>
+        <p>Yes. The generator is completely free and does not require an account. Open the page, type your idea, and download your poster.</p>
+
+        <h3>How long does it take to generate a poster?</h3>
+        <p>Most posters are ready in 5 to 20 seconds. If the AI image service is busy, the generator instantly falls back to a smart gradient background so you always get a result.</p>
+
+        <h3>Can I use the posters I create commercially?</h3>
+        <p>The posters you create are yours to use for social media, events and promotions. If you plan large-scale commercial use, please review the AI-imagery rules that apply in your country or industry.</p>
+
+        <h3>What poster sizes are supported?</h3>
+        <p>Four sizes: Poster 4:5 (1080×1350) for Instagram, Square 1:1 (1080×1080), Story 9:16 (1080×1920) for Reels and TikTok, and Wide 16:9 (1920×1080) for screens and banners.</p>
+
+        <h3>Will the AI write the text on my poster?</h3>
+        <p>The AI paints the background artwork. Your title, subtitle and call-to-action are typeset on top automatically, which keeps every word sharp and correctly spelled — a common weakness of pure image generators.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 AI Poster Generator · Type an idea, get a poster.
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
