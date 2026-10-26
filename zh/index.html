@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI海报生成器 — 免费·文字秒变海报·无需注册</title>
+  <meta name="description" content="输入一句话创意，几秒生成可分享的AI海报。免费AI海报生成器：AI绘制背景、文字自动排版、4种尺寸、一键下载PNG，无需注册账号。" />
+  <link rel="canonical" href="https://ai-poster-generator.pages.dev/zh/" />
+  <link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/" />
+  <link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/" />
+  <link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/" />
+  <link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/" />
+  <link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/" />
+  <link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/" />
+  <link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AI海报生成器 — 免费·文字秒变海报" />
+  <meta property="og:description" content="输入创意，秒出海报。免费AI海报生成器，文字自动排版，无需注册。" />
+  <meta property="og:url" content="https://ai-poster-generator.pages.dev/zh/" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"AI海报生成器","url":"https://ai-poster-generator.pages.dev/zh/","applicationCategory":"DesignApplication","operatingSystem":"Any","description":"输入一句话创意，几秒生成可分享的AI海报。免费AI海报生成器：AI绘制背景、文字自动排版、4种尺寸、一键下载PNG，无需注册账号。","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"这个AI海报生成器免费吗？","acceptedAnswer":{"@type":"Answer","text":"完全免费，无需注册账号。打开页面、输入创意，直接下载海报。"}},{"@type":"Question","name":"生成一张海报要多久？","acceptedAnswer":{"@type":"Answer","text":"通常 5 到 20 秒。如果 AI 绘图服务繁忙，会立即自动改用智能渐变背景，保证你总能拿到结果。"}},{"@type":"Question","name":"生成的海报可以商用吗？","acceptedAnswer":{"@type":"Answer","text":"你生成的海报可用于社交媒体、活动与宣传。如需大规模商业使用，请了解你所在国家/行业对 AI 图像的相关规定。"}},{"@type":"Question","name":"支持哪些海报尺寸？","acceptedAnswer":{"@type":"Answer","text":"四种：海报 4:5（1080×1350）适合 Instagram、方形 1:1（1080×1080）、竖屏 9:16（1080×1920）适合 Reels 和 TikTok、横版 16:9（1920×1080）适合屏幕与横幅。"}},{"@type":"Question","name":"AI 会帮我在海报上写字吗？","acceptedAnswer":{"@type":"Answer","text":"AI 负责绘制背景，标题、副标题和行动按钮由排版引擎自动排版，文字永远清晰、拼写正确——这解决了纯图像生成器的通病。"}}]}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <span class="logo">✦ AI海报生成器</span>
+    <div class="header-right">
+      <nav class="lang-nav" aria-label="Language">
+      <a href="/">EN</a>
+      <a href="/zh/" class="on">中文</a>
+      <a href="/ja/">日本語</a>
+      <a href="/ko/">한국어</a>
+      <a href="/es/">ES</a>
+      <a href="/pt/">PT</a>
+      </nav>
+      <a class="header-cta" href="#tool">制作海报</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>AI海报生成器</h1>
+      <p class="subtitle">输入创意，秒出成品——AI 绘制背景，文字自动排版，免费、无需注册。</p>
+    </section>
+
+    <section class="tool card" id="tool">
+      <div class="tool-grid">
+        <div class="controls">
+          <label for="prompt">描述你的海报</label>
+          <textarea id="prompt" rows="3" placeholder="例如：咖啡店开业，温馨暖色调">grand opening of a coffee shop, warm cozy tones</textarea>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="title-input">标题</label>
+              <input id="title-input" type="text" value="音浪音乐节" maxlength="60" />
+            </div>
+            <div class="field">
+              <label for="subtitle-input">副标题 <span class="opt">（可选）</span></label>
+              <input id="subtitle-input" type="text" value="8月22日 · 滨江公园" maxlength="80" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cta-input">行动按钮文字 <span class="opt">（可选）</span></label>
+            <input id="cta-input" type="text" value="立即抢票" maxlength="60" />
+          </div>
+
+          <label>风格</label>
+          <div class="chips" id="style-chips">
+            <button class="chip active" data-style="gradient">渐变</button>
+            <button class="chip" data-style="minimal">极简</button>
+            <button class="chip" data-style="neon">霓虹</button>
+            <button class="chip" data-style="vintage">复古</button>
+            <button class="chip" data-style="bold">促销大字</button>
+            <button class="chip" data-style="pastel">柔和</button>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="size-select">尺寸</label>
+              <select id="size-select">
+                <option value="poster" selected>海报 4:5 · 1080×1350</option>
+                <option value="square">方形 1:1 · 1080×1080</option>
+                <option value="story">竖屏 9:16 · 1080×1920</option>
+                <option value="wide">横版 16:9 · 1920×1080</option>
+              </select>
+            </div>
+            <div class="field btn-field">
+              <button class="btn" id="generate-btn">生成海报</button>
+            </div>
+          </div>
+
+          <p class="status" id="status"></p>
+        </div>
+
+        <div class="preview">
+          <canvas id="canvas" width="1080" height="1350"></canvas>
+          <div class="preview-actions" id="preview-actions" hidden>
+            <button class="btn btn-ghost" id="regenerate-btn">↻ 换一张</button>
+            <button class="btn" id="download-btn">↓ 下载 PNG</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>试试这些创意</h2>
+      <p class="lead">一键填入表单，然后点「生成海报」。</p>
+      <div class="idea-row">
+        <button class="idea" data-prompt="music festival at night, neon lights, energetic crowd" data-style="neon" data-title="音浪音乐节" data-subtitle="8月22日 · 滨江公园" data-cta="立即抢票">🎪 活动海报</button>
+        <button class="idea" data-prompt="big sale background, dynamic diagonal shapes, red and yellow" data-style="bold" data-title="全场大促" data-subtitle="低至 3 折" data-cta="仅限今日">🛒 促销海报</button>
+        <button class="idea" data-prompt="serene mountain lake at sunrise, soft mist, calm water" data-style="minimal" data-title="深呼吸" data-subtitle="动力始于休息" data-cta="">🧘 语录海报</button>
+        <button class="idea" data-prompt="birthday party with balloons and confetti, joyful pastel colors" data-style="pastel" data-title="生日快乐" data-subtitle="下午 6 点 · 生日派对" data-cta="恭喜你被邀请！">🎂 生日海报</button>
+      </div>
+
+      <h2>工作原理</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><h3>描述</h3><p>输入海报主题——活动、促销或一种情绪，选好风格和尺寸。</p></div>
+        <div class="step"><span class="step-num">2</span><h3>生成</h3><p>AI 为你的创意绘制独一无二的背景，排版引擎自动排好文字。</p></div>
+        <div class="step"><span class="step-num">3</span><h3>下载</h3><p>获得适配 Instagram、Story 或屏幕的清晰 PNG，一键搞定。</p></div>
+      </div>
+
+      <h2>你可以做什么？</h2>
+      <p>任何场合都适用：活动海报与演出传单、促销打折海报、安静治愈的语录海报、生日派对邀请、开业庆典、工作坊、社区聚会、体育赛事……每次生成都独一无二，不满意就换一张，满意就下载。</p>
+
+      <h2>常见问题</h2>
+      <div class="faq">
+        <h3>这个AI海报生成器免费吗？</h3>
+        <p>完全免费，无需注册账号。打开页面、输入创意，直接下载海报。</p>
+
+        <h3>生成一张海报要多久？</h3>
+        <p>通常 5 到 20 秒。如果 AI 绘图服务繁忙，会立即自动改用智能渐变背景，保证你总能拿到结果。</p>
+
+        <h3>生成的海报可以商用吗？</h3>
+        <p>你生成的海报可用于社交媒体、活动与宣传。如需大规模商业使用，请了解你所在国家/行业对 AI 图像的相关规定。</p>
+
+        <h3>支持哪些海报尺寸？</h3>
+        <p>四种：海报 4:5（1080×1350）适合 Instagram、方形 1:1（1080×1080）、竖屏 9:16（1080×1920）适合 Reels 和 TikTok、横版 16:9（1920×1080）适合屏幕与横幅。</p>
+
+        <h3>AI 会帮我在海报上写字吗？</h3>
+        <p>AI 负责绘制背景，标题、副标题和行动按钮由排版引擎自动排版，文字永远清晰、拼写正确——这解决了纯图像生成器的通病。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 AI海报生成器 · 输入创意，秒出海报。
+  </footer>
+
+  <script>
+    window.UI_STRINGS = {"placeholder":"填写创意，点击「生成海报」","painting":"AI 绘制中…（通常 5–20 秒）","done":"完成 ✓ 点「换一张」试试不同效果。","fallback":"生图服务繁忙——已自动改用智能渐变背景，点「换一张」再试试。","exportFail":"导出失败，请重试。"};
+  </script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

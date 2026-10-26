@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ai-poster-generator.pages.dev/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://ai-poster-generator.pages.dev/zh/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://ai-poster-generator.pages.dev/ja/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://ai-poster-generator.pages.dev/ko/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://ai-poster-generator.pages.dev/es/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/"/>
+  </url>
+  <url>
+    <loc>https://ai-poster-generator.pages.dev/pt/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/"/>
   </url>
 </urlset>

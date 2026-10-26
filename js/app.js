@@ -54,6 +54,15 @@
 
   var state = { style: "gradient", size: "poster", lastBg: null, lastSeed: 1, busy: false };
 
+  // per-language UI strings injected by each page (window.UI_STRINGS), English fallback
+  var UI = Object.assign({
+    placeholder: "Describe your idea and hit Generate",
+    painting: "Painting with AI… (usually 5–20s)",
+    done: "Done ✓ Hit Regenerate for a different artwork.",
+    fallback: "AI image service is busy — used a smart gradient instead. Try Regenerate.",
+    exportFail: "Export failed — please try again."
+  }, window.UI_STRINGS || {});
+
   var $ = function (id) { return document.getElementById(id); };
   var canvas = $("canvas"), ctx = canvas.getContext("2d");
   var statusEl = $("status");
@@ -144,7 +153,7 @@
     ctx.fillStyle = "#9a9ab0";
     ctx.font = "600 " + Math.round(W * 0.035) + "px 'Segoe UI', sans-serif";
     ctx.textAlign = "center";
-    ctx.fillText("Describe your idea and hit Generate", W / 2, H / 2);
+    ctx.fillText(UI.placeholder, W / 2, H / 2);
     ctx.textAlign = "start";
   }
 
@@ -267,19 +276,19 @@
     var userPrompt = ($("prompt").value || "").trim() || "colorful abstract poster background";
     var imgPrompt = userPrompt + ", " + style.imgHint;
 
-    setStatus("Painting with AI… (usually 5–20s)");
+    setStatus(UI.painting);
     drawPlaceholder();
 
     loadAIImage(imgPrompt, seed, size.genW, size.genH)
       .then(function (img) {
         state.lastBg = img; state.lastSeed = seed;
         drawPoster(img, style, seed, false);
-        setStatus("Done ✓ Hit Regenerate for a different artwork.");
+        setStatus(UI.done);
       })
       .catch(function () {
         state.lastBg = null; state.lastSeed = seed;
         drawPoster(null, style, seed, true);
-        setStatus("AI image service is busy — used a smart gradient instead. Try Regenerate.");
+        setStatus(UI.fallback);
       })
       .finally(function () {
         state.busy = false;
@@ -298,7 +307,7 @@
 
   function download() {
     canvas.toBlob(function (blob) {
-      if (!blob) { setStatus("Export failed — please try again."); return; }
+      if (!blob) { setStatus(UI.exportFail); return; }
       var a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       a.download = "poster-" + Date.now() + ".png";

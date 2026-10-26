@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIポスタージェネレーター — 無料・テキストからポスターを即作成・登録不要</title>
+  <meta name="description" content="アイデアを入力するだけで、シェアできるAIポスターが数秒で完成。無料のAIポスタージェネレーター：AIが背景を描画、文字は自動レイアウト、4サイズ対応、PNGダウンロード、登録不要。" />
+  <link rel="canonical" href="https://ai-poster-generator.pages.dev/ja/" />
+  <link rel="alternate" hreflang="en" href="https://ai-poster-generator.pages.dev/" />
+  <link rel="alternate" hreflang="zh" href="https://ai-poster-generator.pages.dev/zh/" />
+  <link rel="alternate" hreflang="ja" href="https://ai-poster-generator.pages.dev/ja/" />
+  <link rel="alternate" hreflang="ko" href="https://ai-poster-generator.pages.dev/ko/" />
+  <link rel="alternate" hreflang="es" href="https://ai-poster-generator.pages.dev/es/" />
+  <link rel="alternate" hreflang="pt" href="https://ai-poster-generator.pages.dev/pt/" />
+  <link rel="alternate" hreflang="x-default" href="https://ai-poster-generator.pages.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AIポスタージェネレーター — 無料でポスター作成" />
+  <meta property="og:description" content="アイデアを入力してポスターが完成。無料AIポスタージェネレーター、文字は自動レイアウト、登録不要。" />
+  <meta property="og:url" content="https://ai-poster-generator.pages.dev/ja/" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"AIポスタージェネレーター","url":"https://ai-poster-generator.pages.dev/ja/","applicationCategory":"DesignApplication","operatingSystem":"Any","description":"アイデアを入力するだけで、シェアできるAIポスターが数秒で完成。無料のAIポスタージェネレーター：AIが背景を描画、文字は自動レイアウト、4サイズ対応、PNGダウンロード、登録不要。","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"このAIポスタージェネレーターは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料でアカウント登録も不要です。ページを開いてアイデアを入力し、ポスターをダウンロードするだけです。"}},{"@type":"Question","name":"ポスターの生成にはどれくらい時間がかかりますか？","acceptedAnswer":{"@type":"Answer","text":"通常は5〜20秒です。AI画像サービスが混み合っている場合は、自動でスマートなグラデーション背景に切り替わるため、必ず結果を得られます。"}},{"@type":"Question","name":"作成したポスターを商用利用できますか？","acceptedAnswer":{"@type":"Answer","text":"生成したポスターはSNS・イベント・プロモーションにご利用いただけます。大規模な商用利用の際は、お住まいの国・業界のAI画像に関する規定をご確認ください。"}},{"@type":"Question","name":"対応しているポスターのサイズは？","acceptedAnswer":{"@type":"Answer","text":"4サイズ：ポスター4:5（1080×1350・Instagram向け）、正方形1:1（1080×1080）、ストーリー9:16（1080×1920・Reels/TikTok向け）、ワイド16:9（1920×1080・画面・バナー向け）。"}},{"@type":"Question","name":"AIがポスターに文字を書いてくれますか？","acceptedAnswer":{"@type":"Answer","text":"AIは背景アートを担当し、タイトル・サブタイトル・CTAはレイアウトエンジンが自動配置します。文字が常に鮮明で正しいのは、純粋な画像生成AIの弱点を解決しているからです。"}}]}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <span class="logo">✦ AIポスタージェネレーター</span>
+    <div class="header-right">
+      <nav class="lang-nav" aria-label="Language">
+      <a href="/">EN</a>
+      <a href="/zh/">中文</a>
+      <a href="/ja/" class="on">日本語</a>
+      <a href="/ko/">한국어</a>
+      <a href="/es/">ES</a>
+      <a href="/pt/">PT</a>
+      </nav>
+      <a class="header-cta" href="#tool">ポスターを作る</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>AIポスタージェネレーター</h1>
+      <p class="subtitle">アイデアを入力して、すぐ完成 — AIが背景を描き、文字は自動で美しく配置。無料・登録不要。</p>
+    </section>
+
+    <section class="tool card" id="tool">
+      <div class="tool-grid">
+        <div class="controls">
+          <label for="prompt">ポスターを説明する</label>
+          <textarea id="prompt" rows="3" placeholder="例：カフェのグランドオープン、温かみのある色調">grand opening of a coffee shop, warm cozy tones</textarea>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="title-input">タイトル</label>
+              <input id="title-input" type="text" value="サウンドウェーブ フェス" maxlength="60" />
+            </div>
+            <div class="field">
+              <label for="subtitle-input">サブタイトル <span class="opt">（任意）</span></label>
+              <input id="subtitle-input" type="text" value="8月22日 · リバーサイド公園" maxlength="80" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cta-input">ボタン文 <span class="opt">（任意）</span></label>
+            <input id="cta-input" type="text" value="チケットはこちら" maxlength="60" />
+          </div>
+
+          <label>スタイル</label>
+          <div class="chips" id="style-chips">
+            <button class="chip active" data-style="gradient">グラデーション</button>
+            <button class="chip" data-style="minimal">ミニマル</button>
+            <button class="chip" data-style="neon">ネオン</button>
+            <button class="chip" data-style="vintage">レトロ</button>
+            <button class="chip" data-style="bold">セール強調</button>
+            <button class="chip" data-style="pastel">パステル</button>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="size-select">サイズ</label>
+              <select id="size-select">
+                <option value="poster" selected>ポスター 4:5 · 1080×1350</option>
+                <option value="square">正方形 1:1 · 1080×1080</option>
+                <option value="story">ストーリー 9:16 · 1080×1920</option>
+                <option value="wide">ワイド 16:9 · 1920×1080</option>
+              </select>
+            </div>
+            <div class="field btn-field">
+              <button class="btn" id="generate-btn">ポスターを生成</button>
+            </div>
+          </div>
+
+          <p class="status" id="status"></p>
+        </div>
+
+        <div class="preview">
+          <canvas id="canvas" width="1080" height="1350"></canvas>
+          <div class="preview-actions" id="preview-actions" hidden>
+            <button class="btn btn-ghost" id="regenerate-btn">↻ 再生成</button>
+            <button class="btn" id="download-btn">↓ PNGをダウンロード</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>こんなアイデアはいかが</h2>
+      <p class="lead">ワンクリックで入力 → 生成ボタンを押すだけ。</p>
+      <div class="idea-row">
+        <button class="idea" data-prompt="music festival at night, neon lights, energetic crowd" data-style="neon" data-title="サウンドウェーブ フェス" data-subtitle="8月22日 · リバーサイド公園" data-cta="チケットはこちら">🎪 イベントポスター</button>
+        <button class="idea" data-prompt="big sale background, dynamic diagonal shapes, red and yellow" data-style="bold" data-title="大セール" data-subtitle="最大70%オフ" data-cta="今日だけ">🛒 セールポスター</button>
+        <button class="idea" data-prompt="serene mountain lake at sunrise, soft mist, calm water" data-style="minimal" data-title="深呼吸。" data-subtitle="がんばる前に、休もう" data-cta="">🧘 名言ポスター</button>
+        <button class="idea" data-prompt="birthday party with balloons and confetti, joyful pastel colors" data-style="pastel" data-title="お誕生日おめでとう" data-subtitle="午後6時 · パーティー" data-cta="ご招待します！">🎂 誕生日ポスター</button>
+      </div>
+
+      <h2>使い方</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><h3>入力</h3><p>ポスターのテーマ（イベント・セール・雰囲気）を入力し、スタイルとサイズを選択。</p></div>
+        <div class="step"><span class="step-num">2</span><h3>生成</h3><p>AIがあなただけの背景を描き、タイポグラフィエンジンが文字を自動配置。</p></div>
+        <div class="step"><span class="step-num">3</span><h3>ダウンロード</h3><p>Instagramやストーリーに最適な鮮明なPNGをワンクリックで取得。</p></div>
+      </div>
+
+      <h2>どんな場面に使える？</h2>
+      <p>イベントポスターやライブフライヤー、派手なセールポスター、落ち着いた名言ポスター、誕生日やパーティーの招待状、オープン記念、ワークショップ、スポーツ大会など、あらゆる場面に。生成は毎回ユニーク — 気に入るまで再生成して、ダウンロード。</p>
+
+      <h2>よくある質問</h2>
+      <div class="faq">
+        <h3>このAIポスタージェネレーターは無料ですか？</h3>
+        <p>はい、完全無料でアカウント登録も不要です。ページを開いてアイデアを入力し、ポスターをダウンロードするだけです。</p>
+
+        <h3>ポスターの生成にはどれくらい時間がかかりますか？</h3>
+        <p>通常は5〜20秒です。AI画像サービスが混み合っている場合は、自動でスマートなグラデーション背景に切り替わるため、必ず結果を得られます。</p>
+
+        <h3>作成したポスターを商用利用できますか？</h3>
+        <p>生成したポスターはSNS・イベント・プロモーションにご利用いただけます。大規模な商用利用の際は、お住まいの国・業界のAI画像に関する規定をご確認ください。</p>
+
+        <h3>対応しているポスターのサイズは？</h3>
+        <p>4サイズ：ポスター4:5（1080×1350・Instagram向け）、正方形1:1（1080×1080）、ストーリー9:16（1080×1920・Reels/TikTok向け）、ワイド16:9（1920×1080・画面・バナー向け）。</p>
+
+        <h3>AIがポスターに文字を書いてくれますか？</h3>
+        <p>AIは背景アートを担当し、タイトル・サブタイトル・CTAはレイアウトエンジンが自動配置します。文字が常に鮮明で正しいのは、純粋な画像生成AIの弱点を解決しているからです。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 AIポスタージェネレーター · アイデアを入れて、ポスターのできあがり。
+  </footer>
+
+  <script>
+    window.UI_STRINGS = {"placeholder":"アイデアを入力して「生成」を押してください","painting":"AIが描画中…（通常5〜20秒）","done":"完成 ✓ 「再生成」で別のデザインに。","fallback":"画像生成サービスが混み合っているため、スマートなグラデーション背景で代用しました。「再生成」をお試しください。","exportFail":"書き出しに失敗しました。もう一度お試しください。"};
+  </script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -56,3 +56,22 @@ python -m http.server 8080     # 浏览器打开 http://localhost:8080
 
 - 页面与 FAQ 已用克制措辞（"AI-imagery rules in your country/industry"），不要在页面冒充任何大厂模型官方产品。
 - 商业化投放前建议补一份 Privacy Policy / Terms 页。
+
+## 多语言（i18n）
+
+站点支持 6 个语言版本，每语言独立 URL（利于各语言长尾 SEO）：
+
+| 语言 | 地址 |
+|---|---|
+| English | `/` |
+| 简体中文 | `/zh/` |
+| 日本語 | `/ja/` |
+| 한국어 | `/ko/` |
+| Español | `/es/` |
+| Português | `/pt/` |
+
+- **内容源**：全部在 `scripts/build.mjs` 的 `LANGS` 字典里（含 meta、FAQ、JSON-LD、UI 文案）
+- **改内容/加语言**：编辑字典 → `node scripts/build.mjs` → 提交生成文件即可，Cloudflare 自动部署
+- **SEO 配置**：每页含 canonical + hreflang 互链 + 本语言 WebApplication/FAQPage 结构化数据；`sitemap.xml` 已包含全部语言及 xhtml:alternate
+- **JS 文案**：每页注入 `window.UI_STRINGS`，`js/app.js` 读取并回退英文，引擎逻辑与语言无关
+- 新增语言：在 `LANGS` 加一个字典 → 重新构建 → `sitemap.xml` 补一条 URL → GSC 无需重新验证（子目录自动被覆盖）

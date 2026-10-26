@@ -207,3 +207,29 @@ textarea:focus, input:focus, select:focus { outline: 2px solid var(--accent); bo
   padding: 26px;
   border-top: 1px solid var(--border);
 }
+
+/* ---- language nav ---- */
+.header-right { display: flex; align-items: center; gap: 14px; }
+
+.lang-nav { display: flex; gap: 2px; flex-wrap: wrap; }
+
+.lang-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: .82rem;
+  padding: 4px 9px;
+  border-radius: 8px;
+}
+
+.lang-nav a:hover { color: var(--text); }
+
+.lang-nav a.on {
+  background: var(--card-2);
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 680px) {
+  .site-header { flex-wrap: wrap; gap: 10px; padding-bottom: 10px; }
+  .header-right { width: 100%; justify-content: space-between; }
+}
